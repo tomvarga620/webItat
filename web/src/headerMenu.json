@@ -1,0 +1,22 @@
+[
+  {
+    "local": "CIDM",
+    "label": "CIDM",
+    "title": "Computational Intelligence and Data Mining - 7th international workshop"
+  },
+  {
+    "local": "SloNLP",
+    "label": "SloNLP",
+    "title": "Slovenskočeský NLP workshop"
+  },
+  {
+    "local": "ISAT",
+    "label": "ISAT",
+    "title": "Intelligent speech and audio technologies workshop"
+  },
+  {
+    "local": "DSIDDF",
+    "label": "DSIDDF",
+    "title": "1st Data Science for Intrusion Detection and Digital Forensics"
+  }
+]

@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body {
+  margin: auto;
+  padding: inherit;
+  background-color: rgb(146, 184, 90);
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  background-color: white;
+  grid-area: header;
+}
+
+header h1 {
+  display:none;
+}
+
+header .site-banner {
+  padding-right: 3%;
+}
+
+header nav {
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  background:#7f8c8d;
+
+}
+
+header nav li {
+  width:100px;
+  height:50px;
+  background-color:#7f8c8d;
+  list-style-type:none;
+  text-align:center;
+  line-height:50px;
+  display:block;
+}
+
+header nav li:hover{
+  background:#27ae60;
+}
+
+header nav li a{
+  color:white;
+  text-decoration: none; /* no underline */
+}
+
+main {
+  background-color: white;
+  height: auto;
+  grid-area:main;
+}
+
+main h1 {
+  text-align: center;
+}
+main a {
+  color: rgb(146, 184, 90);
+}
+main h3 {
+  color: rgb(146, 184, 90);
+}
+main p {
+  text-align: left;
+}
+main article {
+  padding: 1%;
+}
+
+main table tbody tr:nth-child(odd) {
+background-color:#c8d6e5;
+}
+
+aside#sidebar {
+  background-color: white;
+  grid-area:aside;
+}
+aside#sidebar h2 {
+  color: rgb(146, 184, 90);
+  text-align: center;
+  margin: 0;
+  padding-top: 5%;
+}
+aside#sidebar #searchform fieldset {
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  text-align: center;
+}
+aside#sidebar nav {
+  color: rgb(146, 184, 90);
+}
+aside#sidebar nav > ul {
+  color: rgb(146, 184, 90);
+}
+aside#sidebar nav > ul > li > a {
+  color: rgb(146, 184, 90);
+}
+aside#sidebar nav > ul > li > ul {
+  color: rgb(146, 184, 90);
+}
+aside#sidebar nav > ul > li > ul > li > a {
+  color: rgb(146, 184, 90);
+}
+aside#sidebar #sponsors > a {
+  margin-left: 21%;
+  margin-right: 21%;
+}
+aside#sidebar #sponsors h2 {
+  padding-bottom: 5%;
+}
+
+footer {
+  text-align: center;
+  background-color: white;
+  grid-area:footer;
+}
+footer p {
+  padding-top: 0.5%;
+}
+footer p > a {
+  color: rgb(146, 184, 90);
+}
+
+header .header-foto{
+position:absolute;
+top:2;
+}
+
+aside#sidebar #sponzors {
+  top:45%;
+  right:50px;
+  background:white;
+  border:1px solid black;
+  text-align:center;
+  grid-area:sponzors;
+  /*transform: rotate(180deg);
+  transform: scaleX(100);
+  transform: scaleY(20);
+  transform: skewY(30deg);*/
+}
+
+main article .lfloat {
+  float:left;
+}
+
+main article .rfloat {
+  float:left;
+}
+
+aside #navigation nav ul{
+list-style-type:none;
+display:flex;
+flex-direction:column;
+background:#bdc3c7;
+}
+
+aside #navigation nav ul li {
+
+list-style-type:none;
+line-height:50px;
+display:block;
+background:#bdc3c7;
+
+}
+
+aside #navigation nav ul li a {
+  text-decoration:none;
+  color:white;
+}
+
+main #workshop-ul {
+  display:flex;
+  list-style-type:none;
+  flex-wrap:wrap;
+}
+
+main #workshop-ul li {
+  background-color:#8395a7;
+  /*flex-basis: 100px;*/
+  height:150px;
+  width:150px;
+  margin:5px;
+  padding:15px;
+  cursor:pointer;
+  
+}
+
+main #workshop-ul li a{
+  text-decoration:none;
+  color:white;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;      
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  max-width:1000px;
+  display:grid;
+  grid-template-columns:15% 15% auto 15% 15% ;
+  grid-template-rows:auto;
+  grid-template-areas:
+  "header header header header header"
+  ". main main aside ."
+  "footer footer footer footer footer";
+}
+
+@media print {
+  header {
+    display:none;
+  }
+
+  aside{
+    display:none;
+  }
+
+}
+
+  @media (max-width:1000px){
+    body{
+      width:100%;
+      display:grid;
+      grid-template-columns:5% 20% auto 20% 5% ;
+      grid-template-rows:auto;
+      grid-template-areas:
+      "header header header header header"
+      ". main main aside ."
+      "footer footer footer footer footer";
+    }
+  }
+  
+  @media (max-width:735px){
+    body{
+      grid-template-columns:100%;
+      grid-template-rows:auto auto auto;
+      grid-template-areas:
+       "header"
+       "aside"
+       "main"
+       "footer";
+    }
+ 
+   picture{
+     display:none;
+   }
+ 
+   main table tbody tr:nth-child(1) {
+     display:none;
+   }  
+   
+   main table tbody tr td:first-child { 
+     display: none;
+   }
+ 
+   header h1 {
+     display:block;
+   }
+ 
+   }

@@ -1,0 +1,235 @@
+body {
+  color: #444;
+  background: #a3c159;
+}
+
+/* links */
+a {
+  color: #6c8c37;
+}
+a:hover {
+  color: #009193;
+}
+
+/* headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.sidehead {
+  color: #333;
+}
+
+/* images */
+img {
+  border-color: #ddd;
+  background-color: #fff;
+}
+
+#wikitext pre.escaped {
+  background: #fafafa;
+  border-color: #eee;
+}
+acronym {
+  border-bottom-color: #777;
+}
+blockquote {
+  background: #fafafa url(quote.gif) no-repeat 3px 5px;
+  border-color: #eee;
+  color: #666666;
+}
+
+th strong {
+  color: #fff;
+}
+th {
+  background-color: #6c8c37;
+  color: #fff;
+  border-left-color: #d68686;
+  border-bottom-color: #fff;
+}
+td {
+  border-left-color: #e8e8e8;
+  border-bottom-color: #dfdfdf;
+}
+tr.row-a {
+  background-color: #f8f8f8;
+}
+tr.row-b {
+  background-color: #efefef;
+}
+
+/* form elements */
+form {
+  border-color: #eee;
+  background-color: #fafafa;
+}
+input {
+  border-color: #eee;
+  color: #777;
+}
+textarea {
+  border-color: #eee;
+  color: #777;
+}
+input.button,
+input.inputbutton {
+  border-color: #ccc;
+  background-color: #fff;
+  color: #333;
+}
+
+/* search form */
+.searchform input.textbox {
+  color: #333;
+}
+.searchform input.button {
+  color: #333;
+}
+
+/*********************** LAYOUT
+************************/
+#wrap {
+  background-color: #fff;
+}
+
+/* header */
+#header {
+  background: #fff;
+}
+#header .headerphoto {
+  background: #fff url(../images/foto-zornicka.png) no-repeat;
+}
+#logo-box {
+  background-image: url(logo_cierne.jpg) no-repeat;
+}
+#logo-box h1#logo,
+#logo-box h1.sitetitle {
+  color: #fff;
+}
+#logo-box h1#logo a,
+#logo-box h1.sitetitle a {
+  color: #fff;
+}
+#logo-box #slogan,
+#logo-box .sitetag {
+  color: #ffffcc;
+}
+
+/* header menu */
+#menu ul {
+  color: #fff;
+  background-color: #a3c159;
+  border-bottom-color: #fff;
+}
+#menu li a {
+  color: #fff;
+}
+#menu li a:hover {
+  background-color: #1ba6b2;
+  color: #fff;
+}
+#menu li a#current,
+#menu li a.selflink {
+  background-color: #6c8c37;
+  color: #fff;
+}
+
+/* content */
+#body-wrap {
+  background-color: #f3f0eb;
+}
+#content-wrap {
+  background-color: #f3f0eb;
+}
+#content {
+  background: #f3f0eb url(divider.jpg) repeat-y scroll right top;
+}
+
+/* sidebar */
+#sidebar {
+  background: #f3f0eb url(divider.jpg) repeat-y scroll left top;
+}
+#sidebar h1,
+#sidebar .sidehead {
+  color: #6c8c37;
+}
+
+/* sidebar menu */
+#sidebar ul a {
+  color: #6c8c37;
+  border-bottom-color: #d5d5d5;
+}
+#sidebar ul a.top {
+  border-top-color: #d5d5d5;
+}
+#sidebar ul a:hover {
+  border-left-color: #6c8c37;
+  color: #6cac37;
+}
+
+/* main */
+#main h2 {
+  border-bottom-color: #d5d5d5;
+}
+#main ul li {
+  list-style-image: url(bullet.gif);
+}
+
+.post .post-footer {
+  background-color: #fafafa;
+  border-color: #eee;
+}
+.post .post-footer .date {
+  background: url(clock.gif) no-repeat 0 center;
+}
+.post .post-footer .comments {
+  background: url(comment.gif) no-repeat 0 center;
+}
+.post .post-footer .tags {
+  background: url(page.gif) no-repeat 0 center;
+}
+
+/* footer */
+#footer {
+  background-color: #f3f0eb;
+  color: #666666;
+}
+#footer a {
+  color: #777;
+}
+#footer a:hover {
+  color: #333;
+}
+
+/* additional classes */
+.gray {
+  color: #bfbfbf;
+}
+
+/* PmWiki Mods */
+#wikitext code.escaped {
+  background-color: #fafafa;
+  border-color: #eee;
+}
+.quickref {
+  color: #000;
+  background-color: #fafafa !important;
+}
+
+/* PmWiki Additions */
+#header .pageactions ul li a {
+  color: #bbb;
+}
+
+/* BlogIt */
+.blogit-newer-entries a,
+.previous-entries a {
+  background: url(images/mini-nav-left.gif) no-repeat left center;
+}
+.blogit-older-entries a,
+.next-entries a {
+  background: url(images/mini-nav-right.gif) no-repeat right center;
+}

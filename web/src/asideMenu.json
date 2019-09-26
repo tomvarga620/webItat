@@ -1,0 +1,11 @@
+[
+  { "local": "home", "label": "Úvodné informácie" },
+  { "local": "workshops", "label": "Workshopy" },
+  { "local": "invited", "label": "Pozvaní prednášajúci" },
+  { "local": "program", "label": "Program", "important": true },
+  { "local": "fees", "label": "Poplatky" },
+  { "local": "venue", "label": "Doprava a ubytovanie" },
+  { "local": "committees", "label": "Výbory konferencie" },
+  { "local": "previous", "label": "Minulé ročníky" },
+  { "local": "contact", "label": "Kontakt" }
+]
