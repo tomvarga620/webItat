@@ -42,7 +42,7 @@ a {
 }
 
 header {
-  background-color:#54B65B;
+  background-color:#59C260;
   height:200px;
   grid-area: header;
 }
@@ -130,6 +130,17 @@ aside#sidebar #searchform fieldset button {
   margin-top:15px;
 }
 
+aside#sidebar #searchform fieldset .searchInput {
+
+width:75%;
+padding:7px;
+display:inline-block;
+border:1px solid #ccc;
+border-radius:4px;
+box-sizing: border-box;
+
+}
+
 footer {
   text-align: center;
   background-color:#16181E;
@@ -176,7 +187,7 @@ aside #navigation nav ul li {
 
 list-style-type:none;
 display:block;
-padding: 8px 16px;
+padding: 12px 20px;
 background:#252832;
 
 }
