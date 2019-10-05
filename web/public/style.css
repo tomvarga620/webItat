@@ -240,6 +240,20 @@ body {
   }
   */
 
+
+  @media (max-width:1000px){
+    body{
+      width:100%;
+      display:grid;
+      /*grid-template-columns:3% 25% auto 25% 3% ;*/
+      grid-template-columns:20% 20% 20% 20% 20% ;
+      grid-template-areas:
+      "header header header header header"
+      "main main main main aside"
+      "footer footer footer footer footer";
+    }
+  }
+
   @media (max-width:735px){
 
     body{
