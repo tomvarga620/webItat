@@ -50,11 +50,14 @@ header nav li a{
 main {
   background-color: white;
   height: auto;
+  min-height:1000px;
   grid-area:main;
+  padding-left:25px;
+  font-size:1.15rem;
 }
 
 main h1 {
-  text-align: center;
+ 
 }
 main a {
   color: rgb(146, 184, 90);
@@ -116,6 +119,7 @@ footer {
   text-align: center;
   background-color: white;
   grid-area:footer;
+  height:250px;
 }
 footer p {
   padding-top: 0.5%;
@@ -202,13 +206,12 @@ main #workshop-ul li a{
 }
 
 body {
-  max-width:1000px;
   display:grid;
   grid-template-columns:15% 15% auto 15% 15% ;
   grid-template-rows:auto;
   grid-template-areas:
   "header header header header header"
-  ". main main aside ."
+  ". main main aside."
   "footer footer footer footer footer";
 }
 
@@ -222,7 +225,7 @@ body {
   }
 
 }
-
+/*
   @media (max-width:1000px){
     body{
       width:100%;
@@ -237,15 +240,6 @@ body {
   }
   
   @media (max-width:735px){
-    body{
-      grid-template-columns:100%;
-      grid-template-rows:auto auto auto;
-      grid-template-areas:
-       "header"
-       "aside"
-       "main"
-       "footer";
-    }
  
    picture{
      display:none;
@@ -263,4 +257,4 @@ body {
      display:block;
    }
  
-   }
+   }*/
