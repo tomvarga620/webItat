@@ -238,8 +238,21 @@ body {
       "footer footer footer footer footer";
     }
   }
-  
+  */
+
   @media (max-width:735px){
+
+    body{
+      width:100%;
+      display:grid;
+      grid-template-columns:1fr 3fr ;
+     /* grid-template-rows:auto;*/
+      grid-template-areas:
+      "header header"
+      "aside aside"
+      "main main"
+      "footer footer";
+    }
  
    picture{
      display:none;
@@ -253,8 +266,4 @@ body {
      display: none;
    }
  
-   header h1 {
-     display:block;
    }
- 
-   }*/
