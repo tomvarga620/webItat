@@ -10,6 +10,12 @@ body {
 
 a {
   color: #53B758;
+  text-decoration:none;
+}
+
+a:hover {
+  color:#3C853F;
+  text-decoration:underline;
   font-weight:bold;
 }
 
@@ -63,6 +69,7 @@ main {
   grid-area:main;
   padding-left:25px;
   padding-right:35px;
+  padding-bottom:30px;
   font-size:1.15rem;
 }
 
@@ -73,10 +80,28 @@ main article {
   padding: 1%;
 }
 
-main table tbody tr:nth-child(odd) {
-background-color:#c8d6e5;
+main table{
+  border:none;
 }
 
+main table tbody a {
+  font-weight:initial;
+  text-decoration:none;
+}
+
+main table tbody a:hover {
+  color:#3C853F;
+  text-decoration:underline;
+  font-weight:bold;
+}
+
+main table tbody th,main table tbody td {
+  padding:8px;
+}
+
+main table tbody tr:nth-child(odd) {
+background-color:rgba(38,41,51, 0.1);
+}
 
 main article .lfloat {
   float:left;
@@ -94,7 +119,7 @@ aside#sidebar {
   grid-area:aside;
 }
 aside#sidebar h2 {
-  color: rgb(146, 184, 90);
+  color: #252832;
   text-align: center;
   margin: 0;
   padding-top: 5%;
@@ -128,6 +153,10 @@ aside#sidebar #searchform fieldset button {
   display:block;
   cursor: pointer;
   margin-top:15px;
+}
+
+aside#sidebar #searchform fieldset button:hover {
+background-color:#3C853F;
 }
 
 aside#sidebar #searchform fieldset .searchInput {
