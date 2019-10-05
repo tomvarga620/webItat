@@ -7,12 +7,11 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-/*
-header .image-wrap{
-height:250px;
-background:#92b85a;
-background:grey;
-}*/
+
+a {
+  color: #53B758;
+  font-weight:bold;
+}
 
  .upNav {
   display:flex;
@@ -23,14 +22,8 @@ background:grey;
   width:100%;
 }
 
- .upNav li {
-  width:100px;
-  height:50px;
-  background-color:#252832;
+.upNav li {
   list-style-type:none;
-  text-align:center;
-  line-height:50px;
-  display:block;
 }
 
 .upNav li:hover{
@@ -41,10 +34,15 @@ background:grey;
   color:white;
   text-decoration: none; /* no underline */
   font-weight:initial;
+  display:block;
+  width:100px;
+  height:60px;
+  text-align:center;
+  line-height:60px;
 }
 
 header {
-  background-color:#53B758;
+  background-color:#54B65B;
   height:200px;
   grid-area: header;
 }
@@ -64,13 +62,10 @@ main {
   min-height:1000px;
   grid-area:main;
   padding-left:25px;
+  padding-right:35px;
   font-size:1.15rem;
 }
 
-a {
-  color: #53B758;
-  font-weight:bold;
-}
 main p {
   text-align: left;
 }
@@ -82,6 +77,18 @@ main table tbody tr:nth-child(odd) {
 background-color:#c8d6e5;
 }
 
+
+main article .lfloat {
+  float:left;
+  padding-right:17px;
+}
+
+main article .rfloat {
+  float:left;
+  padding-right:17px;
+}
+
+
 aside#sidebar {
   background-color:white;
   grid-area:aside;
@@ -92,11 +99,35 @@ aside#sidebar h2 {
   margin: 0;
   padding-top: 5%;
 }
-aside#sidebar #searchform fieldset {
+
+aside#sidebar #search #searchform fieldset {
   margin: 0;
   padding: 0;
   border-width: 0;
-  text-align: center;
+}
+
+aside#sidebar #search #searchform fieldset p {
+
+display:flex;
+flex-direction: column;
+justify-content:center;
+align-items:center;
+
+}
+
+aside#sidebar #searchform fieldset button {
+	color: inherit;
+	border: none;
+	font: inherit;
+  outline: inherit;
+  background: #53B758;
+  padding: 10px;
+  border-radius:5px;
+  color:white;
+  font-weight:400;
+  display:block;
+  cursor: pointer;
+  margin-top:15px;
 }
 
 footer {
@@ -132,17 +163,9 @@ aside#sidebar #sponzors {
   transform: skewY(30deg);*/
 }
 
-main article .lfloat {
-  float:left;
-  padding-right:17px;
-}
-
-main article .rfloat {
-  float:left;
-  padding-right:17px;
-}
-
 aside #navigation nav ul{
+margin:auto;
+padding:0;
 list-style-type: none;
 display:flex;
 flex-direction:column;
@@ -237,7 +260,7 @@ body {
 
 
   @media (max-width:1000px){
-    body{
+    body{ 
       /*width:100%;*/
       display:grid;
       grid-template-columns:75% 25%;
