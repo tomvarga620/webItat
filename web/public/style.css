@@ -3,7 +3,7 @@
 body {
   margin: auto;
   padding: inherit;
-  background-color: rgb(146, 184, 90);
+  background-color:#F4F4F4;
   font-family: 'Lato', sans-serif;
 }
 
@@ -18,7 +18,7 @@ background:grey;
   display:flex;
   flex-direction:row;
   justify-content:flex-start;
-  background:black;
+  background-color:#252832;
   grid-area: nav;
   width:100%;
 }
@@ -26,7 +26,7 @@ background:grey;
  .upNav li {
   width:100px;
   height:50px;
-  background-color:black;
+  background-color:#252832;
   list-style-type:none;
   text-align:center;
   line-height:50px;
@@ -34,16 +34,17 @@ background:grey;
 }
 
 .upNav li:hover{
-  background:#27ae60;
+  background:#6B7080;
 }
 
 .upNav li a{
   color:white;
   text-decoration: none; /* no underline */
+  font-weight:initial;
 }
 
 header {
-  background-color:#7E9E4D;
+  background-color:#53B758;
   height:200px;
   grid-area: header;
 }
@@ -66,14 +67,9 @@ main {
   font-size:1.15rem;
 }
 
-main h1 {
- 
-}
-main a {
-  color: rgb(146, 184, 90);
-}
-main h3 {
-  color: rgb(146, 184, 90);
+a {
+  color: #53B758;
+  font-weight:bold;
 }
 main p {
   text-align: left;
@@ -87,7 +83,7 @@ background-color:#c8d6e5;
 }
 
 aside#sidebar {
-  background-color: white;
+  background-color:white;
   grid-area:aside;
 }
 aside#sidebar h2 {
@@ -102,32 +98,10 @@ aside#sidebar #searchform fieldset {
   border-width: 0;
   text-align: center;
 }
-aside#sidebar nav .sideNav {
-  color: rgb(146, 184, 90);
-}
-aside#sidebar nav .sideNav > ul {
-  color: rgb(146, 184, 90);
-}
-aside#sidebar nav .sideNav > ul > li > a {
-  color: rgb(146, 184, 90);
-}
-aside#sidebar nav .sideNav > ul > li > ul {
-  color: rgb(146, 184, 90);
-}
-aside#sidebar nav .sideNav > ul > li > ul > li > a {
-  color: rgb(146, 184, 90);
-}
-aside#sidebar #sponsors > a {
-  margin-left: 21%;
-  margin-right: 21%;
-}
-aside#sidebar #sponsors h2 {
-  padding-bottom: 5%;
-}
 
 footer {
   text-align: center;
-  background-color:black;
+  background-color:#16181E;
   grid-area:footer;
   height:250px;
 }
@@ -136,7 +110,8 @@ footer p {
   color:white;
 }
 footer p > a {
-  color: rgb(146, 184, 90);
+  color: #53B758;
+  font-weight:initial;
 }
 
 header .header-foto{
@@ -168,24 +143,29 @@ main article .rfloat {
 }
 
 aside #navigation nav ul{
-list-style-type:none;
+list-style-type: none;
 display:flex;
 flex-direction:column;
-background:#bdc3c7;
+list-style-position: inside;
 }
 
 aside #navigation nav ul li {
 
 list-style-type:none;
-line-height:50px;
 display:block;
-background:#bdc3c7;
+padding: 8px 16px;
+background:#252832;
 
 }
 
 aside #navigation nav ul li a {
   text-decoration:none;
   color:white;
+  font-weight:initial;
+}
+
+aside #navigation nav ul li:hover {
+  background:#6B7080;
 }
 
 main #workshop-ul {
@@ -216,6 +196,7 @@ main #workshop-ul li a{
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight:initial;
 }
 
 body {
