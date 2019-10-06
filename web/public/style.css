@@ -26,6 +26,8 @@ a:hover {
   background-color:#252832;
   grid-area: nav;
   width:100%;
+  position:sticky;
+  top: 0;
 }
 
 .upNav li {
@@ -54,6 +56,10 @@ header {
 }
 
 header h1 {
+  display:none;
+}
+
+.site-bkg-small{
   display:none;
 }
 
@@ -233,14 +239,17 @@ main #workshop-ul {
 }
 
 main #workshop-ul li {
-  background-color:#8395a7;
+  background-color:#53B758;
   /*flex-basis: 100px;*/
   height:150px;
   width:150px;
   margin:5px;
   padding:15px;
   cursor:pointer;
-  
+}
+
+main #workshop-ul li:hover {
+  background:#3C853F;
 }
 
 main #workshop-ul li a{
@@ -278,21 +287,6 @@ body {
   }
 
 }
-/*
-  @media (max-width:1000px){
-    body{
-      width:100%;
-      display:grid;
-      grid-template-columns:5% 20% auto 20% 5% ;
-      grid-template-rows:auto;
-      grid-template-areas:
-      "header header header header header"
-      ". main main aside ."
-      "footer footer footer footer footer";
-    }
-  }
-  */
-
 
   @media (max-width:1000px){
     body{ 
@@ -304,6 +298,20 @@ body {
       "header header"
       "main aside"
       "footer footer";
+    }
+  }
+
+  @media (max-width:830px){
+    header {
+      height:100px;
+    }
+
+    .site-bkg{
+      display:none;
+    }
+
+    .site-bkg-small{
+      display:block;
     }
   }
 
@@ -320,10 +328,6 @@ body {
       "main main"
       "footer footer";
     }
- 
-   picture{
-     display:none;
-   }
 
    main table tbody tr:nth-child(1) {
      display:none;
