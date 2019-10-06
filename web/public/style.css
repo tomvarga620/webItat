@@ -191,13 +191,13 @@ position:absolute;
 top:2;
 }
 
-aside#sidebar #sponzors {
-  top:45%;
-  right:50px;
-  background:white;
-  border:1px solid black;
-  text-align:center;
-  grid-area:sponzors;
+footer h2 {
+  color:white;
+}
+
+#sponzors {
+  width:100%;
+  height:50px;
   /*transform: rotate(180deg);
   transform: scaleX(100);
   transform: scaleY(20);
