@@ -38,5 +38,20 @@ router.get("/:page", function(req, res) {
   }
 });
 
+
+
+router.get("/:page", function(req, res) {
+  if (fs.existsSync("views/pages/" + req.params.page + ".ejs")) {
+    res.render("index", {
+      page: req.params.page,
+      asideMenu,
+      headerMenu,
+      linkGenerator
+    });
+  } else {
+    res.status(404).render("404");
+  }
+});
+
 app.listen(8080);
 console.log("listening on port 8080");
