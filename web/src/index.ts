@@ -40,10 +40,10 @@ router.get("/:page", function(req, res) {
 
 
 
-router.get("/:page", function(req, res) {
-  if (fs.existsSync("views/pages/" + req.params.page + ".ejs")) {
+router.get("/ws/:page", function(req, res) {
+  if (fs.existsSync("views/pages/ws/" + req.params.page + ".ejs")) {
     res.render("index", {
-      page: req.params.page,
+      page: "ws/" + req.params.page,
       asideMenu,
       headerMenu,
       linkGenerator

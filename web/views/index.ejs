@@ -5,9 +5,9 @@
 </head>
 
 <body>
-		<%- include('partial/upNav'); %>
+		<%- include('partial/upNav', { page, headerMenu,linkGenerator }); %>
 	<header>
-		<%- include('partial/header', { page, headerMenu,linkGenerator }); %>
+		<%- include('partial/header'); %>
 	</header>
 
 	<main>
