@@ -85,15 +85,20 @@ main {
   font-size:1.15rem;
 }
 
+main table, td, th {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+main table{
+  border-collapse: collapse;
+}
+
+
 main p {
   text-align: left;
 }
 main article {
   padding: 1%;
-}
-
-main table{
-  border:none;
 }
 
 main table tbody a {
