@@ -349,12 +349,8 @@ body {
       "footer footer";
     }
 
-   main table tbody tr:nth-child(1) {
-     display:none;
-   }  
-   
-   main table tbody tr td:first-child { 
-     display: none;
-   }
+    main table.table-previous th:first-child, main table.table-previous td:first-child{
+      display: none;
+    }
  
 }
