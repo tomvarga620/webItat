@@ -175,13 +175,13 @@ aside#sidebar #search #searchform fieldset {
   border-width: 0;
 }
 
-aside#sidebar #search #searchform fieldset p {
-
-display:flex;
-flex-direction: column;
-justify-content:center;
-align-items:center;
-
+aside#sidebar #search #searchform fieldset .inputsWrap {
+  height:150px;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
 }
 
 aside#sidebar #searchform fieldset button {
@@ -204,30 +204,44 @@ aside#sidebar #searchform fieldset button:hover {
 background-color:#3C853F;
 }
 
+:focus{
+  outline: none;
+}
+
+aside#sidebar #searchform fieldset .searchInputWrap {
+  position:relative;
+  width:75%;
+}
+
 aside#sidebar #searchform fieldset .searchInput {
-
-width:75%;
-padding:7px;
-display:inline-block;
-border:1px solid #ccc;
-border-radius:4px;
-box-sizing: border-box;
-
+  width:100%;
+  border: 0; 
+  padding: 7px 0; 
+  border-bottom: 1px solid #ccc;
 }
 
-
-aside#sidebar #searchform fieldset .searchInput:focus {
-  outline: none !important;
-  border:1px solid #53B758;
-  box-shadow: 0 0 2px #719ECE;
+aside#sidebar #searchform fieldset .searchInput ~ .focus-border{
+  position: absolute;
+  bottom: 0; 
+  left: 50%;
+  width: 0; 
+  height: 2px; 
+  background-color: #4caf50; transition: 0.4s;
+}
+  
+aside#sidebar #searchform fieldset .searchInput:focus ~ .focus-border{
+  width: 100%; 
+  transition: 0.4s; 
+  left: 0;
 }
 
-footer {
+footer{
   text-align: center;
   background-color:#16181E;
   grid-area:footer;
   height:250px;
 }
+
 footer p {
   padding-top: 0.5%;
   color:white;

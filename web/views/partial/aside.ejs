@@ -2,13 +2,15 @@
   <h2>Search</h2>
   <form id="searchform" action="http://itat.ics.upjs.sk/" method="get">
     <fieldset>
-      <p>
-        <input type="hidden" name="n" value="ITAT.HomePage">
-        <input type="hidden" name="action" value="search">
-        <input id="s" class="searchInput" type="text" name="q" placeholder="Search" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search'">
-        <!--<input id="searchsubmit" class="button" type="submit" value="Go">-->
-       <button>Submit</button>
-      </p>
+      <section class="inputsWrap">
+          <input type="hidden" name="n" value="ITAT.HomePage">
+          <input type="hidden" name="action" value="search">
+          <section class="searchInputWrap">
+            <input id="s" class="searchInput" type="text" name="q" placeholder="Search" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search'">
+            <span class="focus-border"></span>
+          </section>
+        <button>Submit</button>
+      </section>
     </fieldset>
   </form>
 </section>
