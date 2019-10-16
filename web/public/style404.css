@@ -32,14 +32,14 @@ body .image-wrap button {
     font: inherit;
     outline: inherit;
     background: #53B758;
-    padding: 10px;
+    padding: 17px;
     border-radius:5px;
     color:white;
     font-weight:400;
     display:block;
     cursor: pointer;
     margin-top:15px;
-    font-size:25px;
+    font-size:22px;
 }
 
 body .image-wrap button:hover {
