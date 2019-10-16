@@ -45,9 +45,36 @@ a:hover {
   list-style-type:none;
 }
 
-.upNav li:hover{
-  background:#6B7080;
+.upNav li a{
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  position: relative;
 }
+
+.upNav li a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 50%;
+  top:0;
+  position: absolute;
+  background: #53B758;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.upNav li a:hover:after { 
+  width: 100%; 
+  left: 0; 
+  top:0;
+}
+
 
 .upNav li a{
   color:white;
