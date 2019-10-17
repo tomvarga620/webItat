@@ -176,12 +176,15 @@ main #workshop-ul {
 }
 
 main #workshop-ul li {
+  display: block;
   background-color:#53B758;
   height:150px;
   width:150px;
   margin:5px;
   padding:15px;
   cursor:pointer;
+  text-align: center;
+  position: relative;
 }
 
 main #workshop-ul li:hover {
@@ -189,17 +192,13 @@ main #workshop-ul li:hover {
 }
 
 main #workshop-ul li a{
-  text-decoration:none;
-  color:white;
-  width: 120px;
-  height: 120px;
-  margin: 0 auto;      
-  color: #fff;
   text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight:initial;
+  color: white;
+  display: block;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
 
 aside#sidebar {
@@ -320,6 +319,10 @@ footer p > a {
       "aside aside"
       "main main"
       "footer footer";
+    }
+
+    .navBar {
+      position:initial;
     }
 
     main table.table-previous th:first-child, main table.table-previous td:first-child{
