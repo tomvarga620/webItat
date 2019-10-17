@@ -231,7 +231,11 @@ aside#sidebar .sponzors {
   margin-top:10px;
 }
 
-aside #navigation nav ul{
+aside #navigation nav.sideNav {
+  background:#252832;
+}  
+
+aside #navigation nav.sideNav ul{
   margin:auto;
   padding:0;
   list-style-type: none;
@@ -240,18 +244,60 @@ aside #navigation nav ul{
   flex-direction:column;
 }
 
-aside #navigation nav ul li a{
+aside #navigation nav.sideNav ul li a{
   list-style-type:none;
   display:block;
   padding: 12px 20px;
-  background:#252832;
   text-decoration:none;
   color:white;
   font-weight:initial;
   transition: all .2s ease;
 }
 
-aside #navigation nav ul li a:hover {
+aside #navigation nav.sideNav ul li a:hover {
+  font-size:20px;
+  color:#53B758;
+}
+
+/*hamburger menu*/
+aside #navigationPhone {
+  display:none;
+}
+
+aside #navigationPhone nav.sideNav {
+  background:#252832;
+}  
+
+aside #navigationPhone nav.sideNav button{
+  font-size:1em;
+  color:white;
+  border: none;
+  padding: 0;
+  background: none;
+  outline:none;
+  height:60px;
+  padding: 12px 16px; /* Some padding */
+}  
+
+aside #navigationPhone nav.sideNav ul{
+  margin:auto;
+  padding:0;
+  list-style-type: none;
+  display:none;
+  flex-direction:column;
+}
+
+aside #navigationPhone nav.sideNav ul li a{
+  list-style-type:none;
+  display:block;
+  padding: 12px 20px;
+  text-decoration:none;
+  color:white;
+  font-weight:initial;
+  transition: all .2s ease;
+}
+
+aside #navigationPhone nav.sideNav ul li a:hover {
   font-size:20px;
   color:#53B758;
 }
@@ -307,6 +353,13 @@ footer p > a {
     .site-bkg-small{
       display:block;
     }
+
+    aside #navigation nav.sideNav {
+      display:none;
+    }
+    aside #navigationPhone{
+      display:block;
+    } 
   }
 
   @media (max-width:735px){

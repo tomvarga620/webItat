@@ -8,6 +8,19 @@
   </nav>
 </section>
 
+<section id="navigationPhone">
+  <nav class="sideNav">
+    <button class="icon" onclick="hamburgerToogle()">
+      <i class="fa fa-bars fa-lg"></i>
+   </button>
+    <ul id="links">
+      <% asideMenu.forEach((item) => { %>
+        <%- linkGenerator(item, page) %>
+      <% }) %>
+    </ul>
+  </nav>
+</section>
+
 <section class="sponzors-wrapper">
   <h2>Partners:</h2>
   <section class="sponzors">
@@ -18,5 +31,14 @@
       </a>
     </section>
   </section>
-  
-</section>
+
+<script>
+function hamburgerToogle() {
+  let links = document.getElementById("links");
+  if (links.style.display === "flex") {
+    links.style.display = "none";
+  } else {
+    links.style.display = "flex";
+  }
+}
+</script>
