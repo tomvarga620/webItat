@@ -7,6 +7,17 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+body {
+  display:grid;
+  grid-template-columns:1fr  minmax(auto, 700px)  minmax(auto, 300px) 1fr  ;
+  grid-template-rows:auto;
+  grid-template-areas:
+  "navBar navBar navBar navBar"
+  " . header header ."
+  " . main aside . "
+  " footer footer footer footer ";  
+}
+
 a {
   color: #53B758;
   text-decoration:none;
@@ -32,7 +43,7 @@ a:hover {
   top:0;
 }
 
- .upNav {
+.upNav {
   display:flex;
   flex-direction:row;
   justify-content:flex-start;
@@ -75,10 +86,9 @@ a:hover {
   top:0;
 }
 
-
-.upNav li a{
+.upNav li a {
   color:white;
-  text-decoration: none; /* no underline */
+  text-decoration: none;
   font-weight:initial;
   display:block;
   width:100px;
@@ -93,18 +103,13 @@ header {
   grid-area: header;
 }
 
-header h1 {
-  display:none;
-}
-
-.site-bkg-small{
+.site-bkg-small {
   display:none;
 }
 
 main {
   background-color: white;
   height: auto;
-  min-height:800px;
   grid-area:main;
   padding-left:25px;
   padding-right:35px;
@@ -112,14 +117,20 @@ main {
   font-size:1.15rem;
 }
 
+
 main table, td, th {
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+main table th {
+  background:rgba(54,58,71, 0.9);
+  color:white;
+  height:50px;
 }
 
 main table{
   border-collapse: collapse;
 }
-
 
 main p {
   text-align: left;
@@ -145,6 +156,7 @@ main table tbody th,main table tbody td {
 
 main table tbody tr:nth-child(odd) {
 background-color:rgba(38,41,51, 0.1);
+
 }
 
 main article .lfloat {
@@ -157,164 +169,6 @@ main article .rfloat {
   padding-right:17px;
 }
 
-
-aside#sidebar {
-  background-color:white;
-  grid-area:aside;
-}
-aside#sidebar h2 {
-  color: #252832;
-  margin: 0;
-  padding-top: 5%;
-  margin-left:12%;
-}
-
-aside#sidebar #search #searchform fieldset {
-  margin: 0;
-  padding: 0;
-  border-width: 0;
-}
-
-aside#sidebar #search #searchform fieldset .inputsWrap {
-  height:150px;
-  width:100%;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-}
-
-aside#sidebar #searchform fieldset button {
-	color: inherit;
-	border: none;
-	font: inherit;
-  outline: inherit;
-  background: #53B758;
-  padding: 10px;
-  border-radius:5px;
-  color:white;
-  font-weight:400;
-  display:block;
-  cursor: pointer;
-  margin-top:15px;
-  width:75%;
-  transition: all 0.4s ease 0s;
-  /*color: #fff !important;
-  text-transform: uppercase;
-  text-decoration: none;
-  background: #60a3bc;
-  padding: 20px;
-  border-radius: 50px;
-  display: inline-block;
-  border: none;
-  transition: all 0.4s ease 0s;*/
-}
-
-aside#sidebar #searchform fieldset button:hover {
-text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
--webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
--moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-transition: all 0.4s ease 0s;
-}
-
-aside#sidebar #searchform fieldset button:hover {
-background-color:#3C853F;
-}
-
-:focus{
-  outline: none;
-}
-
-aside#sidebar #searchform fieldset .searchInputWrap {
-  position:relative;
-  width:75%;
-}
-
-aside#sidebar #searchform fieldset .searchInput {
-  width:100%;
-  border: 0; 
-  padding: 7px 0; 
-  border-bottom: 1px solid #ccc;
-}
-
-aside#sidebar #searchform fieldset .searchInput ~ .focus-border{
-  position: absolute;
-  bottom: 0; 
-  left: 50%;
-  width: 0; 
-  height: 2px; 
-  background-color: #4caf50; transition: 0.4s;
-}
-  
-aside#sidebar #searchform fieldset .searchInput:focus ~ .focus-border{
-  width: 100%; 
-  transition: 0.4s; 
-  left: 0;
-}
-
-footer{
-  text-align: center;
-  background-color:#16181E;
-  grid-area:footer;
-  height:250px;
-}
-
-footer p {
-  padding-top: 0.5%;
-  color:white;
-}
-footer p > a {
-  color: #53B758;
-  font-weight:initial;
-}
-
-header .header-foto{
-position:absolute;
-top:2;
-}
-
-footer h2 {
-  color:white;
-}
-
-#sponzors {
-  width:100%;
-
-  height:50px;
-  /*transform: rotate(180deg);
-  transform: scaleX(100);
-  transform: scaleY(20);
-  transform: skewY(30deg);*/
-}
-
-aside #navigation nav ul{
-margin:auto;
-padding:0;
-list-style-type: none;
-display:flex;
-flex-direction:column;
-list-style-position: inside;
-}
-
-aside #navigation nav ul li {
-
-list-style-type:none;
-display:block;
-padding: 12px 20px;
-background:#252832;
-
-}
-
-aside #navigation nav ul li a {
-  text-decoration:none;
-  color:white;
-  font-weight:initial;
-}
-
-aside #navigation nav ul li:hover {
-  background:#6B7080;
-}
-
 main #workshop-ul {
   display:flex;
   list-style-type:none;
@@ -323,7 +177,6 @@ main #workshop-ul {
 
 main #workshop-ul li {
   background-color:#53B758;
-  /*flex-basis: 100px;*/
   height:150px;
   width:150px;
   margin:5px;
@@ -349,15 +202,73 @@ main #workshop-ul li a{
   font-weight:initial;
 }
 
-body {
-  display:grid;
-  grid-template-columns:1fr  minmax(auto, 700px)  minmax(auto, 300px) 1fr  ;
-  grid-template-rows:auto;
-  grid-template-areas:
-  "navBar navBar navBar navBar"
-  " . header header ."
-  " . main aside . "
-  " footer footer footer footer ";  
+aside#sidebar {
+  background-color:white;
+  grid-area:aside;
+}
+
+aside#sidebar h2 {
+  color: #252832;
+  margin: 0;
+}
+
+aside#sidebar .sponzors-wrapper {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  width:100%;
+  height:150px;
+}
+
+aside#sidebar .sponzors {
+  width:100%;
+  height:50px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-top:10px;
+}
+
+aside #navigation nav ul{
+  margin:auto;
+  padding:0;
+  list-style-type: none;
+  display:flex;
+  text-align:center;
+  flex-direction:column;
+}
+
+aside #navigation nav ul li a{
+  list-style-type:none;
+  display:block;
+  padding: 12px 20px;
+  background:#252832;
+  text-decoration:none;
+  color:white;
+  font-weight:initial;
+  transition: all .2s ease-in-out; 
+}
+
+aside #navigation nav ul li a:hover {
+  font-size:20px;
+  color:#53B758;
+}
+
+footer{
+  text-align: center;
+  background-color:#16181E;
+  grid-area:footer;
+  height:200px;
+}
+
+footer p {
+  padding-top: 0.5%;
+  color:white;
+}
+footer p > a {
+  color: #53B758;
+  font-weight:initial;
 }
 
 @media print {
@@ -373,7 +284,6 @@ body {
 
   @media (max-width:1000px){
     body{ 
-      /*width:100%;*/
       display:grid;
       grid-template-columns:75% 25%;
       grid-template-areas:
