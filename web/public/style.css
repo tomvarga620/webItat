@@ -173,6 +173,8 @@ main #workshop-ul {
   display:flex;
   list-style-type:none;
   flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
 }
 
 main #workshop-ul li {
@@ -246,7 +248,7 @@ aside #navigation nav ul li a{
   text-decoration:none;
   color:white;
   font-weight:initial;
-  transition: all .2s ease-in-out; 
+  transition: all .2s ease;
 }
 
 aside #navigation nav ul li a:hover {
@@ -328,5 +330,5 @@ footer p > a {
     main table.table-previous th:first-child, main table.table-previous td:first-child{
       display: none;
     }
- 
 }
+
