@@ -277,6 +277,7 @@ aside #navigationPhone nav.sideNav button{
   outline:none;
   height:60px;
   padding: 12px 16px; /* Some padding */
+  cursor:pointer;
 }  
 
 aside #navigationPhone nav.sideNav ul{
