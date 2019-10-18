@@ -354,13 +354,6 @@ footer p > a {
     .site-bkg-small{
       display:block;
     }
-
-    aside #navigation nav.sideNav {
-      display:none;
-    }
-    aside #navigationPhone{
-      display:block;
-    } 
   }
 
   @media (max-width:735px){
@@ -384,5 +377,12 @@ footer p > a {
     main table.table-previous th:first-child, main table.table-previous td:first-child{
       display: none;
     }
+
+    aside #navigation nav.sideNav {
+      display:none;
+    }
+    aside #navigationPhone{
+      display:block;
+    } 
 }
 
